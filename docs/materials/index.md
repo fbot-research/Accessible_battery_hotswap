@@ -17,6 +17,11 @@ The following components are required for each battery drawer:
 - Electrical wires for XT30-to-connector integration.
 </div>
 
+<figure style="text-align: center;">
+  <img src="../_static/materials_img/exploded_drawer.png" width="500">
+  <figcaption><i>Exploded view of the battery drawer.</i> </figcaption>
+</figure>
+
 
 ## Drawer Assembly Procedure
 
@@ -24,7 +29,13 @@ The following components are required for each battery drawer:
 The assembly process is described as follows:
 
 1. Remove the original interface from the NBR 14136 female connector.
-2. Replace it with the custom-designed interface (as provided in the attached model).
+2. Replace it with the custom-designed interface (as provided in the downloads page).
+
+<figure style="text-align: center;">
+  <img src="../_static/materials_img/NBR_modified_module.png" width="200">
+  <figcaption><i>Part used as the new modified NBR module.</i> </figcaption>
+</figure>
+
 3. Fabricate the two halves of the drawer enclosure using additive manufacturing.
 4. Insert the modified NBR connector into the designated slot in the upper enclosure half.
 5. Establish electrical connections between the connector and the battery using the XT30 connector, wires, and fork terminals.
@@ -39,10 +50,16 @@ Each socket assembly requires:
 
 - Brazilian standard male plug (NBR 14136);
 - 3D printing filament;
-- Four screws (size to be determined);
-- Four nuts (size to be determined);
+- Four screws M2.9;
+- Four nuts M2.9;
 - Two NBR 14136 male connectors.
 </div>
+
+
+<figure style="text-align: center;">
+  <img src="../_static/materials_img/exploded_socket.png" width="500">
+  <figcaption><i>Exploded view of the hotswap socket.</i> </figcaption>
+</figure>
 
 
 ## Socket Assembly Procedure
@@ -54,8 +71,20 @@ The socket assembly is performed according to the following steps:
 2. Disassemble the NBR 14136 male connector.
 3. Remove the excess tabs formed during disassembly, retaining only the conductive pins and the wire terminal base.
 4. Insert the prepared connector into the corresponding openings in the printed socket structure.
+
+<figure style="text-align: center;">
+  <img src="../_static/materials_img/socket_connector_opening.png" width="200">
+  <figcaption><i>Socket opening for the connector.</i> </figcaption>
+</figure>
+
 5. Secure the assembly using the dedicated fastening component, screws, and nuts.
 6. It is essential that the screw heads are oriented inward for proper fitting.
-7. Perform all electrical connections prior to final mechanical fixation of the connector.
+7. Perform all electrical connections to the connector prior to final mechanical fixation of the connector.
+
+
+```{tip}
+After assembling the socket, it is also recommended to fix it to the structure of the robot or machine it is going to power. For that, we added holes to improve its ability to be secured to aluminum profiles, both at the top and bottom. Alternatively, it can also be used with a cut acrylic sheet.
+```
+
 </div>
 
