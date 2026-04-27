@@ -37,8 +37,8 @@ html_theme_options = {
 
     # --- Cores personalizadas para o modo claro ---
     "light_css_variables": {
-        "color-brand-primary": "#2980b9", 
-        "color-brand-content": "#2980b9", 
+        "color-brand-primary": "#ff5500", 
+        "color-brand-content": "#ff5500", 
     },
     
     # --- Cores personalizadas para o modo escuro ---

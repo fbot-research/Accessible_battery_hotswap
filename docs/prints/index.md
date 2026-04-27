@@ -8,8 +8,12 @@ This section provides an overview of the 3D-printed parts used in the system, in
 We assume that you already have the basic knolowegde of 3D printing for the execution of this project.
 ```
 
+---
+## Hot-swap Parts and Details
 
-## Parts and details
+
+Here, we will brieflly describe the 3D printed pieces used in the Hot-swap system and how to print them
+
 
 #### Sockets
 
@@ -51,6 +55,42 @@ This part is used to secure the male connector to the back of the socket pieces.
 <figure style="text-align: center;">
   <img src="../_static/prints_img/PO_fixator_sliced.png" width="400">
   <figcaption><i>Image of the connector fixator in the slicer, on the printing orientation.</i> </figcaption>
+</figure>
+
+---
+
+## Portable Charger Parts and Details
+
+
+Here, we will brieflly describe the 3D printed pieces used in the charging system and how to print them
+
+
+#### Modified connector fixator
+
+
+This part is used to secure the male connector to the back of the charger pieces. It is also used four times in total, the modifications were made to batter acommodate the piece in the printing bed.
+
+
+<figure style="text-align: center;">
+  <img src="../_static/prints_img/modified_PO_affixator.png" width="400">
+  <figcaption><i>Image of the modified connector fixator in the slicer, on the printing orientation.</i> </figcaption>
+</figure>
+
+
+#### Charger parts
+
+This part is mounted to the toolbox used as the charging Station, the part was o riginally one part, but it was modified to better fit saller printers, bellow you can see images of both left and right halvez of this part.
+
+
+<figure style="text-align: center;">
+  <img src="../_static/prints_img/Charger_connector_left.png" width="400">
+  <figcaption><i>Image of the left part of the charger in the slicer, on the printing orientation.</i> </figcaption>
+</figure>
+
+
+<figure style="text-align: center;">
+  <img src="../_static/prints_img/Charger_connector_right.png" width="400">
+  <figcaption><i>Image of the right part of the charger in the slicer, on the printing orientation.</i> </figcaption>
 </figure>
 
 

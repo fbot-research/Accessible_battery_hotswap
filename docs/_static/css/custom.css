@@ -2,3 +2,18 @@
 a.sidebar-brand-text {
     display: none !important;
 }
+
+/* Links normais */
+a {
+    color: #ff5500; /* ou a cor que você já usa */
+}
+
+/* Links visitados */
+a:visited {
+    color: #ff5500; /* mesma cor para não ficar roxo */
+}
+
+/* Opcional: hover */
+a:hover {
+    color: #ff5500;
+}
