@@ -17,3 +17,20 @@ a:visited {
 a:hover {
     color: #ff5500;
 }
+
+.figure-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 20px; /* space between images */
+  flex-wrap: wrap; /* allows responsiveness */
+}
+
+.figure-container figure {
+  margin: 0;
+  text-align: center;
+}
+
+.figure-container img {
+  max-width: 100%;
+  height: auto;
+}

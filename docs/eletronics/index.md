@@ -1,5 +1,5 @@
 # PCBs and components
-
+<div style= "text-align: justify"> 
 In here, the electrical PCBs of the systems will be better described. we'll descibre both, theirs functions and making of.
 
 ## PCBs description
@@ -80,7 +80,105 @@ The PCB is now ready for soldering.
 
 ## System's power supply
 
-To ensure reliable operation under continuous charging cycles, some minor modifications were made to a 42V/10A switching power supply. One of the fixed resistors is replaced with a trimpot, allowing adjustment of the output current for improved control of the charging process. Additionally, a display is added to the power supply circuit to indicate the output voltage and current, aiming to optimize the diagnosis of potential issues that may arise due to inconsistent charging values. 
+This project demonstrates how to modify a standard switching power supply to turn it into a battery charger with an adjustable current limiter.
+
+
+```{warning}
+Notice: This procedure was performed on a generic power supply model. Since printed circuit board (PCB) designs vary by manufacturer, it is essential that you inspect the circuit and use a multimeter to check the traces before making any modifications. What works on this board may require adaptations for other models.
+```
+
+### Identifying and Modifying Feedback
+
+The first step is to locate the shunt resistor (circled in red in Figure 1). It serves as the power supply’s current sensor. 
+
+
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/1.png" width="400">
+  <figcaption><i>Figure 1</i></figcaption>
+</figure>
+
+When turning the board over, as shown in Figure 2, we should follow the trace that carries the signal from this shunt to the controller IC.
+
+
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/2.png" width="400">
+  <figcaption><i>Figure 2</i></figcaption>
+</figure>
+
+Along this circuit path, you will find a resistor (shown in Figures 3 and 4). To make the current limit adjustable, we removed this component and installed a 1kΩ trimpot.
+<b>How does this work? </b> The power supply’s controller IC seeks to maintain a constant reference voltage. When you replace the fixed resistor with a trimpot, you gain the ability to adjust the gain of this feedback signal. This allows you to “tell” the power supply to limit the power earlier, protecting your batteries from overcharging.
+
+
+<div class="figure-container">
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/3.png" width="350">
+  <figcaption><i>Figure 3</i></figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/4.png" width="350">
+  <figcaption><i>Figure 4</i></figcaption>
+</figure>
+</div>
+
+### Installation of External Monitoring
+
+
+We need external monitoring to verify the battery charge information. To do this, we use an external voltmeter/ammeter module.
+For the ammeter to work, it is necessary to make a notch in the trace connecting the shunt resistor to the power supply output, creating an isolation point (as shown in Figures 5 and 6). 
+
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/5.png" width="400">
+  <figcaption><i>Figure 5</i></figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/6.png" width="400">
+  <figcaption><i>Figure 6</i></figcaption>
+</figure>
+
+
+This cutout allows us to install the display’s current sensor in series, ensuring that the current drawn is accurately measured.
+Figure 7 shows a 12V tap on the board itself to power the module, as well as the connection of the voltage measurement wire from the positive terminal of the power supply output to the voltmeter.
+
+
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/7.png" width="400">
+  <figcaption><i>Figure 7</i></figcaption>
+</figure>
+
+
+After verifying the connections, the board is reassembled into its original housing (Figures 8 and 9), resulting in a power supply with an adjustable current limit for charging the batteries.
+
+
+<div class="figure-container">
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/8.jpg" width="350">
+  <figcaption><i>Figure 8</i></figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="../_static/eletronics/9.jpg" width="350">
+  <figcaption><i>Figure 9</i></figcaption>
+</figure>
+</div>
+
+### Charging Procedure for the 42V Battery Bank
+
+With the power supply assembled, follow these steps:
+
+1. Start with a lower voltage setting and gradually increase the voltage and current.
+2. Monitor the display until the final 42V is reached.
+3. Adjust the trimpot so that the total current does not exceed 7A.
+Since you will be charging 4 batteries in parallel, this configuration ensures approximately 1.75A for each one, which is a safe and efficient value to prevent thermal stress on the cells.
+
+<b>List of components:</b>
+- 42V / 10A Switching Power Supply.
+- 100V 10A Digital Voltmeter/Ammeter
+- 1kΩ multi-turn trimpot.
+
+
+
 
 ## PCB's Download
 
@@ -88,3 +186,4 @@ To ensure reliable operation under continuous charging cycles, some minor modifi
 You can click 
 <a href="../_static/PCB-Battery_protection_system.pdf" download>here</a>
 to download the PCB's pdf file for printing.
+</div>

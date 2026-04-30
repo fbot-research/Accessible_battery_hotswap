@@ -2,7 +2,7 @@ Accessible Battery Hot-Swap and Mobile Charging System
 ======================================================
 
 <div style="text-align: justify;">
-This work presents the development of a hotswap system designed for integration into the M.I.C.K.Y. robotic platform, with the primary objective of enabling efficient and reliable battery replacement during operation. The project focuses on delivering a practical solution that balances performance, safety, and cost, while remaining accessible in terms of both materials and fabrication processes.
+This work presents the development of a hotswap system designed for integration into dynamic machines and systems, with the primary objective of enabling efficient and reliable battery replacement during operation. The project focuses on delivering a practical solution that balances performance, safety, and cost, while remaining accessible in terms of both materials and fabrication processes.
 
 
 <figure style="text-align: center; padding: 20px">
