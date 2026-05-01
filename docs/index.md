@@ -1,4 +1,4 @@
-Accessible Battery Hot-Swap and Mobile Charging System
+Accessible Battery Hotswap and Mobile Charging System
 ======================================================
 
 <div style="text-align: justify;">

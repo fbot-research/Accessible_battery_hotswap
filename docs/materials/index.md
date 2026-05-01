@@ -11,10 +11,10 @@ The following components are required for each battery drawer:
 
 - Brazilian standard female power outlet socket (NBR 14136);
 - 3D printing filament (material of choice);
-- One XT30 female connector;
+- One XT60 female connector;
 - Two fork (spade) cable terminals;
 - One hoverboard battery;
-- Electrical wires for XT30-to-connector integration.
+- Electrical wires for XT60-to-connector integration.
 </div>
 
 <figure style="text-align: center;">
@@ -38,7 +38,7 @@ The assembly process is described as follows:
 
 3. 3D print the two halves of the drawer.
 4. Insert the modified NBR connector into the designated slot in the upper enclosure half.
-5. Establish electrical connections between the connector and the battery using the XT30 connector, wires, and fork terminals.
+5. Establish electrical connections between the connector and the battery using the XT60 connector, wires, and fork terminals.
 6. Position the battery within the enclosure and secure the assembly by closing the case.
 </div>
 
@@ -79,28 +79,29 @@ The socket assembly is performed according to the following steps:
 
 5. Secure the assembly using the dedicated fastening part, screws, and nuts.
 6. It is essential that the screw heads are oriented inward for proper fitting.
-7. Perform all electrical connections to the connector prior to final mechanical fixation of the connector.
+7. Perform all electrical connections to outlet prior to final mechanical fixation of the connector.
 
 ## Charger Module Materials
 
 - 3D printing material
 - 2x M6x20 nuts and screws
-- toolkit enclosure (Metasul 18.3)
-- 20A Diode
-- 3.3kΩ Resistor
-- Capacitor (53V/4700uF
+- Toolkit enclosure (Metasul 18.3)
+- 4x male power outler
 - LT166 Voltage Regulator
 - Diode, Capacitor, and Resistor network
 - Relay Module
-- 4x Reed switch or hall sensor
+- 4x Reed switch 
 - Voltage and current monitor
 
 
 ## Charger Module Assembly
 
-1. print the 
 
-
+1. Print the required parts.
+2. Assemble the two parts of the charger's piece together using nuts and screws.
+3. Install the male power outlet into the 3D-printed pieces, similarly to how it is done in the hot-swap system.
+4. Assemble the circuitry and apply the modifications to the power supply.
+5. Mount the voltage and current monitor into the designated slot in the charger's part.
 
 
 ```{tip}

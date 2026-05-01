@@ -1,12 +1,12 @@
 # Design Considerations
 <div style= "text-align: justify"> 
-The design of the hotswap system was guided by a combination of electrical and mechanical constraints. The goal was to develop a solution that is not only functionally reliable, but also reproducible and accessible. In addition to the hotswap mechanism itself, the supporting charging infrastructure was designed as an integrated module, ensuring safe energy delivery, efficient thermal management, and ease of maintenance, you can better follow the decisions that molded this project in the text bellow.
+The design of the hotswap system was guided by a combination of electrical and mechanical constraints. The goal was to develop a solution that is not only functionally reliable, but also reproducible and accessible. In addition to the hotswap mechanism itself, the supporting charging infrastructure was designed as an integrated module, ensuring safe energy delivery, efficient thermal management, and ease of maintenance. You can better follow the decisions that molded this project in the text bellow.
 
 
 
 ## Component Accessibility and Cost Efficiency
 
-A central design principle was the use of widely available, low-cost components. The adoption of the NBR 14136 connector (20 A rating) reflects this approach, as it is commonly found in the Brazilian market and does not require specialized procurement channels. This choice reduces the overall system cost and simplifies maintenance, as replacement parts can be easily sourced. Additionally, the system can be easily adapted to support other types of connectors or power outlets. Furthermore, the use of 3D printing for structural components allows for rapid replacement and customization without significantly increasing production costs. This approach also enables iterative improvements to the design.
+A central design principle was the use of widely available, low-cost components. The adoption of the NBR 14136 connector (20A rating) reflects this approach, as it is commonly found in the Brazilian market and does not require specialized procurement channels. This choice reduces the overall system cost and simplifies maintenance, as replacement parts can be easily sourced. Additionally, the system can be easily adapted to support other types of connectors or power outlets. Furthermore, the use of 3D printing for structural components allows for rapid replacement and customization without significantly increasing production costs. This approach also enables iterative improvements to the design.
 
 This philosophy extends to the charger module, which integrates four NBR 14136 20A sockets into a single enclosure, allowing multiple batteries to be charged using a shared infrastructure. The use of a commercially available 42V switched-mode power supply further reduces cost and complexity, avoiding the need for custom power electronics design.
 
@@ -19,7 +19,7 @@ This philosophy extends to the charger module, which integrates four NBR 14136 2
 
 ## Electrical Reliability
 
-The system was designed to ensure stable electrical contact under dynamic operating conditions. The selected connector provides sufficient current capacity for high power requirements, while also offering robust physical contacts. The integration of XT30 connectors between the battery and the main connector improves modularity and facilitates safe handling during battery replacement. Furthermore, the use of fork (spade) terminals ensures secure and maintainable connections at the interface with the NBR connector. Care was taken to minimize contact resistance and avoid intermittent connections, which could compromise system performance or damage electronic components.
+The system was designed to ensure stable electrical contact under dynamic operating conditions. The selected connector provides sufficient current capacity for high power requirements, while also offering robust physical contacts. The integration of XT60 connectors between the battery and the main connector improves modularity and facilitates safe handling during battery replacement. Furthermore, the use of fork (spade) terminals ensures secure and maintainable connections at the interface with the NBR connector. Care was taken to minimize contact resistance and avoid intermittent connections, which could compromise system performance or damage electronic components.
 
 Within the charging module, electrical reliability is reinforced through the use of custom PCBs designed to handle currents up to 10A, with appropriately dimensioned traces. A voltage and current sensing system is also integrated, enabling real-time monitoring of charging conditions.
 

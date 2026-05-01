@@ -9,10 +9,10 @@ We assume that you already have the basic knolowegde of 3D printing for the exec
 ```
 
 ---
-## Hot-swap Parts and Details
+## Hotswap Parts and Details
 
 
-Here, we will brieflly describe the 3D printed pieces used in the Hot-swap system and how to print them
+Here we will briefly describe the 3D printed pieces used in the hotswap system and how to print them
 
 
 #### Sockets
@@ -62,13 +62,13 @@ This part is used to secure the male connector to the back of the socket pieces.
 ## Portable Charger Parts and Details
 
 
-Here, we will brieflly describe the 3D printed pieces used in the charging system and how to print them
+Here we will briefly describe the 3D printed pieces used in the charging system and how to print them
 
 
 #### Modified connector fixator
 
 
-This part is used to secure the male connector to the back of the charger pieces. It is also used four times in total, the modifications were made to batter acommodate the piece in the printing bed.
+This part is used to secure the male connector to the back of the charger pieces. It is also used four times in total, the modifications were made to better acommodate the piece in the printing bed.
 
 
 <figure style="text-align: center;">
@@ -79,7 +79,7 @@ This part is used to secure the male connector to the back of the charger pieces
 
 #### Charger parts
 
-This part is mounted to the toolbox used as the charging Station, the part was o riginally one part, but it was modified to better fit saller printers, bellow you can see images of both left and right halvez of this part.
+This part is mounted to the toolbox used as the charging station, the part was originally one part, but it was modified to better fit smaller printers. Bellow you can see images of both left and right halvez of this part.
 
 
 <figure style="text-align: center;">
@@ -96,7 +96,7 @@ This part is mounted to the toolbox used as the charging Station, the part was o
 
 ## Download
 
-- You can download either individual parts or the full system trough 
+- You can download either individual parts or the full system through 
 [this link](https://grabcad.com/library/accessible-battery-hotswap-system-1).
 
 ```{tip}
